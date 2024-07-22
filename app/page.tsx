@@ -15,37 +15,28 @@ export default async function Home() {
   const jobDetails = await fetch( "https://job.kunjappu.online/api/portal-jobs/1"
   ).then(jobDetails => jobDetails.json());
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex  flex-col items-center justify-between p-24">
       <NavBar />
-      {/* <div className="flex flex-row items-center  "> */}
-      {/* <div className="flex gap-2 p-2 rounded-l-xl bg-gray-200 text-black items-center">
-          <GoSearch />
-          Find your perfect job
-        </div>
-        <hr className="h-full bg-red-400 w-1" />
-        <div className="flex gap-2  rounded-r-xl  bg-gray-200 items-center ">
-          <IoLocationOutline />
-          Location
-        </div> */}
-      {/* <input className="text-black">Search</input> */}
-      {/* </div> */}
+    
+   {/* <input className="text-black">Search</input> */}
+    
       <div className="flex gap-2  items-center">
         <ImPower className="text-green-500" />
         <span className="text-green-500">Upload your CV</span>
-        <span className="text-green-400">-</span>{" "}
-        <span className="text-green-500">Find your perfect job</span>
+        <span className="text-green-400">-</span>
+        <span className="text-green-800">Find your perfect job</span>
       </div>
       <div className="flex text-black gap-2">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2  items-center">
           <BsStars />
           <h1>For you</h1>
         </div>
         <h1>Search</h1>
         <h1>Your activity </h1>
-        <hr></hr>
       </div>
+      <hr className="h-1 mb-10 text-black w-full"></hr>
       <div className="flex gap-2 w-full">
-        <div className="flex flex-col w-[25%]  text-black border-2 gap-2  p-2 ">
+        <div className="flex flex-col w-[30%]  text-black  gap-2  p-2 ">
           {job.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}
