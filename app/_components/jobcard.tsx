@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { BsStars } from "react-icons/bs";
 import { CiBookmark } from "react-icons/ci";
 import { ImPower } from "react-icons/im";
+import { IoMdStar } from "react-icons/io";
 
 const JobCard = ({job}:Props) => {
   return (
@@ -18,6 +20,12 @@ const JobCard = ({job}:Props) => {
             ></Image>
           </div>
           <h1 className="text-md ">{job.company.name}</h1>
+          <div className="flex gap-1 items-center">
+          <h1 className="text-sm">4.5</h1>
+          <span>
+          <IoMdStar />
+          </span>
+          </div>
         </div>
         <CiBookmark />
       </div>

@@ -28,7 +28,7 @@ const DetailCardSection = ({
       <div className='border p-2 w-fit rounded-lg'>
         <h1>Remote</h1>
       </div>
-      <h1 className="text-sm">{job.description}</h1>
+      <h1 className="text-sm mb-4">{job.description}</h1>
     </div>
   );
 }   
