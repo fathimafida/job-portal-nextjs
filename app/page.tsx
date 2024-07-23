@@ -6,6 +6,7 @@ import { GoSearch } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
 import { ImPower } from "react-icons/im";
 import { BsStars } from "react-icons/bs";
+import LoginPage from "./login/page";
 
 
 
@@ -15,12 +16,12 @@ export default async function Home() {
   const jobDetails = await fetch( "https://job.kunjappu.online/api/portal-jobs/1"
   ).then(jobDetails => jobDetails.json());
   return (
-    <main className="flex  flex-col items-center justify-between p-24">
+    <main className="flex  flex-col items-center justify-between p-20 ">
       <NavBar />
-    
-   {/* <input className="text-black">Search</input> */}
-    
-      <div className="flex gap-2  items-center">
+
+      {/* <input className="text-black">Search</input> */}
+
+      <div className="flex gap-2  items-center overflow-y-auto">
         <ImPower className="text-green-500" />
         <span className="text-green-500">Upload your CV</span>
         <span className="text-green-400">-</span>
