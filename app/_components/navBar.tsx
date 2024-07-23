@@ -9,7 +9,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 
 const NavBar = () => {
   return (
-    <div className="fixed text-sm top-0 left-0 right-0 z-50 flex shadow-md justify-between items-center p-3 gap-4 w-full ">
+    <div className="fixed text-sm top-0 left-0 right-0 z-50 flex shadow-md justify-between items-center p-3 gap-4 w-full bg-white">
       <div className="flex items-center ">
         <h1 className="text-green-400 font-sans text-2xl font-semibold">Glassdoor </h1>
       </div>

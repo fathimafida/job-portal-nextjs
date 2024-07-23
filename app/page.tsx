@@ -43,7 +43,7 @@ export default async function Home() {
           ))}
         </div>
 
-        <div className="flex flex-col w-[70%] border-2 p-2 ">
+        <div className="flex flex-col w-[70%] border-1 p-2 ">
           {<DetailCardSection job={jobDetails} />}
         </div>
       </div>
