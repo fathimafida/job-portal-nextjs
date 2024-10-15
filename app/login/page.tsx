@@ -12,7 +12,7 @@ const LoginPage = () => {
     
       <div className="flex flex-col w-1/2 justify-center items-center bg-gray-100">
         <div className="text-center p-4">
-         <h1>Hello ,get Start with glassdoor</h1>
+         
           <h1 className="text-xl font-bold text-green-300">Welcome Back!!</h1>
           <p className="text-black text-sm">
             Enter your details to start searching for your dream job on this job.
@@ -20,6 +20,7 @@ const LoginPage = () => {
         </div>
         <form
           id="loginForm"
+          
           onSubmit={async (e) => {
             e.preventDefault();
             const email = e.target.email.value;
